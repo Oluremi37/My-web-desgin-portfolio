@@ -1,3 +1,4 @@
+import telvidaImg from "../assets/projects/telvida.jpg";
 import businessImg from "../assets/projects/img_2.jpg";
 import webImg from "../assets/projects/img_3.jpg";
 import greenImg from "../assets/projects/img_4.jpg";
@@ -5,6 +6,15 @@ import noteImg from "../assets/projects/img_5.jpg";
 import FadeIn from "./FadeIn";
 
 const projects = [
+  {
+    title: "Telvida Technologies Website",
+    description:
+      "A full-stack production website built for Telvida Technologies, featuring a responsive frontend, backend functionality, and an admin dashboard for managing website content and operations.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Admin Dashboard"],
+    demo: "https://www.telvidatechnologies.com",
+    image: telvidaImg,
+  },
+
   {
     title: "Business Online Health Score",
     description:
@@ -68,7 +78,7 @@ const Projects = () => {
                 key={index}
                 className="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:border-orange-500 hover:-translate-y-1 transition-all duration-300"
               >
-                {/* Image */}
+                {/* Project Image */}
                 <div className="h-52 overflow-hidden">
                   <img
                     src={project.image}
@@ -77,7 +87,7 @@ const Projects = () => {
                   />
                 </div>
 
-                {/* Content */}
+                {/* Project Content */}
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-white mb-3">
                     {project.title}
@@ -87,7 +97,7 @@ const Projects = () => {
                     {project.description}
                   </p>
 
-                  {/* Tech stack */}
+                  {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tech.map((tech, i) => (
                       <span
@@ -101,23 +111,33 @@ const Projects = () => {
 
                   {/* Buttons */}
                   <div className="flex gap-3">
+                    {/* Live Website / Demo */}
                     <a
                       href={project.demo}
                       target="_blank"
-                      rel="noreferrer"
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition"
+                      rel="noopener noreferrer"
+                      className={`flex-1 text-center px-4 py-2 rounded-lg transition ${
+                        project.github
+                          ? "bg-orange-500 hover:bg-orange-600 text-white"
+                          : "bg-orange-500 hover:bg-orange-600 text-white"
+                      }`}
                     >
-                      Live Demo
+                      {project.title === "Telvida Technologies Website"
+                        ? "Visit Website"
+                        : "Live Demo"}
                     </a>
 
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex-1 text-center border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-4 py-2 rounded-lg transition"
-                    >
-                      GitHub
-                    </a>
+                    {/* GitHub - only for projects that have a GitHub link */}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-4 py-2 rounded-lg transition"
+                      >
+                        GitHub
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
