@@ -49,7 +49,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="/Yetunde-Solanke-CV.pdf"
+                href="/Yetunde-Solanke-CV-1.pdf"
                 download
                 className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-xl transition"
               >
