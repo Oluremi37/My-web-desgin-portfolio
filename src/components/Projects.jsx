@@ -3,9 +3,19 @@ import businessImg from "../assets/projects/img_2.jpg";
 import webImg from "../assets/projects/img_3.jpg";
 import greenImg from "../assets/projects/img_4.jpg";
 import noteImg from "../assets/projects/img_5.jpg";
+import threeVerseImg from "../assets/projects/threeVerseImg.jpg";
 import FadeIn from "./FadeIn";
 
 const projects = [
+  {
+    title: "3Verse Solutions Website",
+    description:
+      "A full-stack business website featuring an admin dashboard for managing products, featured listings, stock availability, services, projects, and customer quote requests.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Admin Dashboard"],
+    demo: "https://3verse-solutions-frontend.vercel.app/",
+    image: threeVerseImg,
+  },
+
   {
     title: "Telvida Technologies Website",
     description:
