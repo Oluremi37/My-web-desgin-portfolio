@@ -4,18 +4,18 @@ const Stats = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div>
-            <h3 className="text-4xl font-bold text-orange-500">8+</h3>
+            <h3 className="text-4xl font-bold text-orange-500">15+</h3>
             <p className="text-slate-300 mt-2">Projects Built</p>
           </div>
 
           <div>
             <h3 className="text-4xl font-bold text-orange-500">MERN</h3>
-            <p className="text-slate-300 mt-2">Stack Developer</p>
+            <p className="text-slate-300 mt-2">Full-Stack Development</p>
           </div>
 
           <div>
-            <h3 className="text-4xl font-bold text-orange-500">100%</h3>
-            <p className="text-slate-300 mt-2">Commitment To Growth</p>
+            <h3 className="text-4xl font-bold text-orange-500">End-to-End</h3>
+            <p className="text-slate-300 mt-2">Development & Deployment</p>
           </div>
         </div>
       </div>
