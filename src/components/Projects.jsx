@@ -4,14 +4,33 @@ import webImg from "../assets/projects/img_3.jpg";
 import greenImg from "../assets/projects/img_4.jpg";
 import noteImg from "../assets/projects/img_5.jpg";
 import threeVerseImg from "../assets/projects/threeVerseImg.jpg";
+import sparkImg from "../assets/projects/telvida-spark.png";
 import FadeIn from "./FadeIn";
 
 const projects = [
+  {
+    title: "Telvida Spark",
+    description:
+      "A full-stack production cloud digital signage CMS built at Telvida Technologies, featuring a responsive React frontend, a Node.js and PostgreSQL backend, Google OAuth login, and an admin dashboard for managing media, playlists, schedules, layouts and displays.",
+    tech: [
+      "React",
+      "Vite",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Google OAuth",
+      "Admin Dashboard",
+    ],
+    github: "https://github.com/Oluremi37/telvida-spark",
+    demo: "https://telvida-spark-frontend.vercel.app/",
+    image: sparkImg,
+  },
   {
     title: "3Verse Solutions Website",
     description:
       "A full-stack business website featuring an admin dashboard for managing products, featured listings, stock availability, services, projects, and customer quote requests.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Admin Dashboard"],
+    github: "https://github.com/Oluremi37/3Verse-Solutions",
     demo: "https://3verse-solutions-frontend.vercel.app/",
     image: threeVerseImg,
   },
@@ -21,6 +40,7 @@ const projects = [
     description:
       "A full-stack production website built for Telvida Technologies, featuring a responsive frontend, backend functionality, and an admin dashboard for managing website content and operations.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Admin Dashboard"],
+    github: "https://github.com/Oluremi37/Telvida-Technologies",
     demo: "https://www.telvidatechnologies.com",
     image: telvidaImg,
   },
